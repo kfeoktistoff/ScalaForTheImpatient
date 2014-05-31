@@ -1,0 +1,3 @@
+Package objects contain some common data - constants and functions which
+cannot be assigned to a particular class. A package object has unified name 'package.scala',
+so it can be easily found by a programmer who wants to add a new data there.

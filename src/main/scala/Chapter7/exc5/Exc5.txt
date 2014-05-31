@@ -1,0 +1,7 @@
+private[com] def giveRaise(rate: Double)
+
+This method declaration means that the method is available from the class contains
+the method or from package which contains the class of parent packages of the class's
+package up to the [com] package.
+It makes sense if 'com' package was redefined (bad style) or to hide the method from
+packages like 'org', 'java' etc.

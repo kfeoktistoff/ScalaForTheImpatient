@@ -1,0 +1,6 @@
+Stack[A] protected (protected val elems: List[A])
+
+means that
+1) c-tor is available for the class and subclasses only
+2) elems field has protected access which means that it is available only in the class and its subclasses
+

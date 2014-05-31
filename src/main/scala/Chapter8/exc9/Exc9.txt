@@ -1,0 +1,4 @@
+'def range()' in Creature and 'def range()' in Ant: env.size = 2
+'val range' in Creature and 'def range()' in Ant: error (def cannot override val)
+'def range' in Creature and 'val range()' in Ant: env.size = 0
+'val range' in Creature and 'val range()' in Ant: env.size = 0
