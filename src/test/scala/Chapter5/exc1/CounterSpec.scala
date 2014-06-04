@@ -8,20 +8,20 @@ import org.scalatest.{Matchers, FlatSpec}
 
 class CounterSpec extends FlatSpec with Matchers {
   "A Counter" should "set value as 0 after creating" in {
-    assert(new Counter().current == 0)
+    new Counter().current shouldBe 0
   }
 
   "A Counter" should "increment value after increment call" in {
     val counter: Counter = new Counter()
     counter.increment()
-    assert(counter.current == 1)
+    counter.current shouldBe 1
   }
 
   "A Counter" should "not increment value if it is MaxValue" in {
     val counter: Counter = new Counter()
     for (i <- 0 until Int.MaxValue) counter.increment()
     counter.increment()
-    assert(counter.current == Int.MaxValue)
+    counter.current shouldBe Int.MaxValue
   }
 
 }
