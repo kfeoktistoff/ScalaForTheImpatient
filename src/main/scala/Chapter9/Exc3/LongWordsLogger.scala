@@ -16,7 +16,7 @@ class LongWordsLogger {
     log(Source.fromFile(file).mkString)
   }
 
-  def log(fileContent: String) = {
+  def log(fileContent: String):Unit = {
     for (i <- fileContent.split(wordsSplitRegex) if i.length >= loggedWordLength) printInConsole(i)
   }
 
@@ -27,7 +27,7 @@ class LongWordsLogger {
   /**
    * One-line solution
    */
-  def log() = {
+  def log():Unit = {
     for (i <- Source.fromFile(path).mkString.split(wordsSplitRegex) if i.length >= loggedWordLength) println(i)
   }
 }
