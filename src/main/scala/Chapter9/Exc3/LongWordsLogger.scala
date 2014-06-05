@@ -12,7 +12,7 @@ class LongWordsLogger {
   val loggedWordLength = 12
   val wordsSplitRegex: String = "\\s+"
 
-  def log(file: File = new File(path)) = {
+  def log(file: File = new File(path)):Unit = {
     log(Source.fromFile(file).mkString)
   }
 
