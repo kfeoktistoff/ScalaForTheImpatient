@@ -1,7 +1,7 @@
 package Chapter9.Exc3
 
 import scala.io.Source
-import java.io.PrintWriter
+import java.io.File
 
 /**
  * Created by Kirill Feoktistov on 01.06.14
@@ -12,12 +12,16 @@ class LongWordsLogger {
   val loggedWordLength = 12
   val wordsSplitRegex: String = "\\s+"
 
-  def log(filePath: String): Unit = {
-    log(Source.fromFile(filePath).mkString, new PrintWriter(filePath))
+  def log(file: File = new File(path)) = {
+    log(Source.fromFile(file).mkString)
   }
 
-  def log(fileContent: String, writer: PrintWriter) = {
-    for (i <- fileContent.split(wordsSplitRegex) if i.length >= loggedWordLength) writer.println(i)
+  def log(fileContent: String) = {
+    for (i <- fileContent.split(wordsSplitRegex) if i.length >= loggedWordLength) printInConsole(i)
+  }
+
+  def printInConsole(line: String) {
+    println(line)
   }
 
   /**
