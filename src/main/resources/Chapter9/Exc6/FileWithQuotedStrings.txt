@@ -1,0 +1,8 @@
+unquoted
+"
+""
+"quoted"
+\"slashQuoted\"
+\\"doubleSlashQuoted\\"
+\"singleDoubleSlashQuoted\\"
+\\"doubleSingleSlashQuoted\"
