@@ -1,0 +1,142 @@
+//ScalaObject, AnyRef and Any classes are dropped
+//BitSet object is being instanced in the opposite order
+
+
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> lin(scala.Serializable) >> lin(scala.collection.BitSetLike) >> lin(scala.collection.BitSet) >> lin(scala.collection.immutable.SortedSet) >> lin(scala.collection.AbstractSet)
+
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> lin(scala.Serializable) >> scala.collection.BitSetLike >> lin(scala.collection.SortedSetLike) >> scala.collection.BitSet >> lin(scala.collection.BitSetLike)
+	>> lin(scala.collection.SortedSet) >> scala.collection.immutable.SortedSet >> lin(scala.collection.SortedSetLike) >> lin(scala.collection.SortedSet) >> lin(scala.collection.immutable.Set)
+	>> scala.collection.AbstractSet >> lin(scala.collection.Set) >> lin(scala.collection.AbstractIterable)
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> lin(scala.Serializable) >> scala.collection.BitSet >> lin(scala.collection.BitSetLike)
+	>> scala.collection.immutable.SortedSet >> _lin(scala.collection.SortedSetLike) >> lin(scala.collection.SortedSet) >> lin(scala.collection.immutable.Set)
+	>> scala.collection.AbstractSet >> _lin(scala.collection.Set) >> lin(scala.collection.AbstractIterable)
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike >> lin(scala.collection.SortedSetLike)
+	>> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> lin(scala.collection.generic.Sorted) >> lin(scala.collection.SetLike) >> scala.collection.SortedSet
+	>> lin(scala.collection.SortedSetLike) >> lin(scala.collection.Set) >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> lin(scala.collection.SetLike)
+	>> lin(scala.collection.generic.Sorted) >> scala.collection.immutable.Set >> lin(scala.collection.Parallelizable) >> lin(scala.collection.SetLike) >> lin(scala.collection.generic.GenericSetTemplate)
+	>> lin(scala.collection.Set) >> lin(scala.collection.immutable.Iterable) >> scala.collection.AbstractSet >> scala.collection.Set >> lin(scala.collection.SetLike)
+	>> lin(scala.collection.generic.GenericSetTemplate) >> lin(scala.collection.GenSet) >> lin(scala.collection.Iterable)
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike
+	>> lin(scala.collection.generic.Sorted) >> scala.collection.immutable.Set >> lin(scala.collection.Parallelizable)
+	>> lin(scala.collection.immutable.Iterable) >> scala.collection.AbstractSet >> scala.collection.Set >> lin(scala.collection.SetLike)
+	>> lin(scala.collection.generic.GenericSetTemplate) >> lin(scala.collection.GenSet) >> lin(scala.collection.Iterable)
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.Parallelizable >> scala.collection.immutable.Iterable >> lin(scala.collection.Parallelizable)
+ 	>> lin(scala.collection.IterableLike) >> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.Iterable) >> lin(scala.collection.immutable.Traversable)
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> lin(scala.collection.Parallelizable) >> lin(scala.collection.generic.Subtractable)
+ 	>> lin(scala.collection.GenSetLike) >> lin(scala.collection.IterableLike) >> scala.collection.generic.GenericSetTemplate >> lin(scala.collection.generic.GenericTraversableTemplate)
+ 	>> scala.collection.GenSet >> lin(scala.collection.generic.GenericSetTemplate) >> lin(scala.collection.GenIterable) >> lin(scala.collection.GenSetLike) >> scala.collection.Iterable
+ 	>> lin(scala.collection.IterableLike) >> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.GenIterable) >> lin(scala.collection.Traversable)
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> lin(scala.collection.immutable.Traversable)
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> lin(scala.collection.Parallelizable) >> lin(scala.collection.generic.Subtractable)
+ 	>> scala.collection.GenSet >> lin(scala.collection.generic.GenericSetTemplate) >> lin(scala.collection.GenSetLike) >> scala.collection.Iterable
+ 	>> lin(scala.collection.IterableLike) >> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.GenIterable) >> lin(scala.collection.Traversable)
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> lin(scala.Immutable) >> lin(scala.collection.TraversableLike)
+ 	>> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.Traversable) >> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike
+ 	>> scala.collection.Parallelizable >> scala.collection.generic.Subtractable >> scala.collection.GenSet >> scala.collection.generic.GenericSetTemplate >>
+ 	>> lin(scala.collection.generic.GenericTraversableTemplate) >> scala.collection.GenSetLike >> lin(scala.collection.Parallelizable) >> lin(scala.Equals) 
+ 	>> lin(scala.collection.GenIterableLike) >> scala.collection.Iterable >> scala.collection.IterableLike >> lin(scala.collection.GenIterableLike) >> lin(scala.collection.TraversableLike) >> lin(Equals)
+ 	>> scala.collection.generic.GenericTraversableTemplate >> lin(scala.collection.generic.HasNewBuilder) >> scala.collection.GenIterable >> lin(scala.collection.generic.GenericTraversableTemplate)
+ 	>> lin(scala.collection.GenTraversable) >> lin(scala.collection.GenIterableLike) >> scala.collection.Traversable >> lin(scala.collection.generic.GenericTraversableTemplate) 
+ 	>> lin(scala.collection.TraversableOnce) >> lin(scala.collection.GenTraversable) >> lin(scala.collection.TraversableLike)
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> lin(scala.Immutable)
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet 
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> _lin(scala.collection.Parallelizable)
+ 	>> scala.collection.Iterable >> scala.collection.IterableLike >> lin(scala.Equals) >> lin(scala.collection.generic.HasNewBuilder) >> scala.collection.GenIterable
+ 	>> _lin(scala.collection.GenIterableLike) >> scala.collection.Traversable >> _lin(scala.collection.generic.GenericTraversableTemplate)
+ 	>> lin(scala.collection.TraversableOnce) >> lin(scala.collection.GenTraversable) >> lin(scala.collection.TraversableLike)
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> scala.Immutable
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet 
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> scala.collection.Parallelizable
+ 	>> scala.collection.Iterable >> scala.collection.IterableLike >> scala.Equals >> scala.collection.generic.HasNewBuilder >> scala.collection.GenIterable
+ 	>> scala.collection.GenIterableLike >> scala.collection.Traversable >> scala.collection.generic.GenericTraversableTemplate 
+ 	>> lin(scala.collection.generic.HasNewBuilder) >> scala.collection.TraversableOnce >> lin(scala.collection.GenTraversableOnce) >> scala.collection.GenTraversable
+ 	>> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.GenTraversableOnce) >> lin(scala.collection.GenTraversableLike) >>
+ 	>> scala.collection.TraversableLike >> lin(scala.collection.Parallelizable) >> lin(scala.collection.GenTraversableLike) >> lin(scala.collection.TraversableOnce)
+ 	>> lin(scala.collection.generic.FilterMonadic) >> lin(scala.collection.generic.HasNewBuilder)
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> scala.Immutable
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> scala.collection.Iterable >> scala.collection.IterableLike >> scala.Equals 
+ 	>> scala.collection.GenIterable >> scala.collection.GenIterableLike >> scala.collection.Traversable >> scala.collection.GenTraversable
+ 	>> lin(scala.collection.generic.GenericTraversableTemplate) >> lin(scala.collection.GenTraversableOnce) >> scala.collection.TraversableLike
+ 	>> lin(scala.collection.Parallelizable) >> lin(scala.collection.GenTraversableLike) >> lin(scala.collection.TraversableOnce)
+ 	>> lin(scala.collection.generic.FilterMonadic) >> lin(scala.collection.generic.HasNewBuilder)
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> scala.Immutable
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> scala.collection.Iterable >> scala.collection.IterableLike >> scala.Equals 
+ 	>> scala.collection.GenIterable >> scala.collection.GenIterableLike >> scala.collection.Traversable >> scala.collection.GenTraversable
+ 	>> scala.collection.generic.GenericTraversableTemplate >> lin(scala.collection.generic.HasNewBuilder) >> scala.collection.GenTraversableOnce
+ 	>> scala.collection.TraversableLike >> scala.collection.Parallelizable >> scala.collection.GenTraversableLike >> lin(scala.collection.Parallelizable)
+ 	>> lin(scala.collection.Parallelizable) >> scala.collection.TraversableOnce >> lin(scala.collection.GenTraversableOnce) >> scala.collection.generic.FilterMonadic
+ 	>> scala.collection.generic.HasNewBuilder
+
+//Removing duplicates since beginning
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> scala.Immutable
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> scala.collection.Iterable >> scala.collection.IterableLike >> scala.Equals
+ 	>> scala.collection.GenIterable >> scala.collection.GenIterableLike >> scala.collection.Traversable >> scala.collection.GenTraversable
+ 	>> scala.collection.generic.GenericTraversableTemplate >> scala.collection.TraversableLike >> scala.collection.GenTraversableLike
+ 	>> lin(scala.collection.Parallelizable) >> scala.collection.TraversableOnce >> lin(scala.collection.GenTraversableOnce) >> scala.collection.generic.FilterMonadic
+ 	>> scala.collection.generic.HasNewBuilder
+
+//Expanding
+lin(scala.collection.immutable.BitSet)
+= scala.collection.immutable.BitSet >> scala.Serializable >> java.io.Serializable >> scala.collection.BitSet >> scala.collection.BitSetLike
+ 	>> scala.collection.SortedSet >> scala.collection.immutable.SortedSet >> scala.collection.SortedSetLike >> scala.collection.generic.Sorted
+ 	>> scala.collection.immutable.Set >> scala.collection.immutable.Iterable >> scala.collection.immutable.Traversable >> scala.Immutable
+ 	>> scala.collection.AbstractSet >> scala.collection.Set >> scala.collection.SetLike >> scala.collection.generic.Subtractable >> scala.collection.GenSet
+ 	>> scala.collection.generic.GenericSetTemplate >> scala.collection.GenSetLike >> scala.collection.Iterable >> scala.collection.IterableLike >> scala.Equals
+ 	>> scala.collection.GenIterable >> scala.collection.GenIterableLike >> scala.collection.Traversable >> scala.collection.GenTraversable
+ 	>> scala.collection.generic.GenericTraversableTemplate >> scala.collection.TraversableLike >> scala.collection.GenTraversableLike
+ 	>> scala.collection.Parallelizable >> scala.collection.TraversableOnce >> scala.collection.GenTraversableOnce >> scala.collection.generic.FilterMonadic >> scala.collection.generic.HasNewBuilder
