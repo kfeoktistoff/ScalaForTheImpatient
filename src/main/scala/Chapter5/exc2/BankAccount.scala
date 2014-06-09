@@ -1,6 +1,8 @@
 package exc2
 
 /**
+ * Write a class BankAccount with methods deposit and withdraw, and read-only property balance
+ *
  * Created by Kirill Feoktistov on 27.05.14
  */
 

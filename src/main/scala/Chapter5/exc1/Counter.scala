@@ -1,6 +1,8 @@
 package Chapter5.exc1
 
 /**
+ * Improve the Counter class in Section 1 so that it doesn't turn negative at Int.MaxValue
+ *
  * Created by Kirill Feoktistov on 28.05.14
  */
 
