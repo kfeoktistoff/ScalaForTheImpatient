@@ -1,0 +1,7 @@
+take(n) - returns substring containing first n symbols of original string
+drop(n) - returns substring containing all symbols of original string except first n symbols
+takeRight(n) - returns substring containing last n symbols of original string
+dropRight(n) - returns substring containing all symbols of original string except last n symbols
+
+These functions require only one argument in opposite to substring function which require 2 arguments. Plus these
+function are easier to read.

@@ -1,0 +1,2 @@
+res2: String = crazycrazycrazy
+http://www.scala-lang.org/api/2.10.4/index.html#scala.collection.immutable.StringLike

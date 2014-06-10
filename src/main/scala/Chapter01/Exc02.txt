@@ -1,0 +1,1 @@
+math.pow(math.sqrt(3), 2)

@@ -1,0 +1,2 @@
+Returns max value.
+scala.runtime.RishInt.scala

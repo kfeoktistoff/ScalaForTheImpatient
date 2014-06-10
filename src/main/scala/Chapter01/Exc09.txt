@@ -1,0 +1,2 @@
+first symbol: "someString".charAt(0)
+last symbol: "someString".charAt("someString".length - 1)
