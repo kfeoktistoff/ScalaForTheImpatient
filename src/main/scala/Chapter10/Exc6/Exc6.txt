@@ -1,0 +1,3 @@
+JContainer cannot extend 2 classes (Container and JComponent) because multiple inheritance is prohibited in Java.
+Scala solution is implementation Container as a trait and mix it where necessary, i.e.
+in Panel class.
