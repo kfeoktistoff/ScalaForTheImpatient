@@ -5,6 +5,9 @@ import java.util.{HashMap => JavaHashMap}
 import scala.collection.JavaConversions.mapAsScalaMap
 
 /**
+ * Write a program that copies all elements from a Java hash map into a Scala hash map.
+ * Use imports to rename both classes.
+ *
  * Created by Kirill Feoktistov on 29.05.14
  */
 

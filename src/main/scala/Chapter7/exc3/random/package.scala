@@ -1,6 +1,14 @@
 package Chapter7.exc3
 
 /**
+ * Write a package random with functions nextInt():Int, nextDouble:Double,
+ * and setSeed(seed: Int): Unit. To generate random numbers, use the linear
+ * congruential generator
+ *
+ *  next = previous*a+b mod 2^n,
+
+ * where a = 16645254, b = 1013904223, and n = 32.
+ *
  * Created by Kirill Feoktistov on 29.05.14
  */
 

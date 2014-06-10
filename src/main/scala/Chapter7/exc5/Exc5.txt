@@ -1,4 +1,4 @@
-private[com] def giveRaise(rate: Double)
+What is the meaning of private[com] def giveRaise(rate: Double)? Is it useful?
 
 This method declaration means that the method is available from the class contains
 the method or from package which contains the class of parent packages of the class's

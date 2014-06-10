@@ -2,6 +2,8 @@ package Chapter7.exc2
 package com
 
 /**
+ * Write a puzzler that baffles your Scala friends, using a package com that isn't at the top level
+ *
  * Created by Kirill Feoktistov on 29.05.14
  */
 

@@ -1,6 +1,13 @@
 package Chapter7.exc1
 
 /**
+ * Write an example program to demonstrate that
+ *  package com.horstmann.impatient
+ * is not the same as
+ *  package com
+ *  package horstmann
+ *  package impatient
+ *
  * Created by Kirill Feoktistov on 29.05.14
  */
 

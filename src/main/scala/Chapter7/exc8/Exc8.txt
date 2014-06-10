@@ -1,5 +1,9 @@
+WHat is the effect of
+
 import java._
 import javax._
+
+Is this a good idea?
 
 These instructions import all classes contain in 'java' and 'javax' packages and their child packages. It can lead to
 name collisions - situation when different classes have the same name.
