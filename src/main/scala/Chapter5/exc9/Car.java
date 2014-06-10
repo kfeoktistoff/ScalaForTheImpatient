@@ -1,6 +1,9 @@
 package Chapter5.exc9;
 
 /**
+ * Reimplement the class of the preceding exercise in Java, C#, or C++ (your
+ * choice). How much shorter is the Scala class?
+ *
  * Created by Kirill Feoktistov on 28.05.14
  */
 

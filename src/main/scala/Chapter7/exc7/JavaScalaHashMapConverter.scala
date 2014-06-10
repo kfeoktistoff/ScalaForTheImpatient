@@ -2,6 +2,8 @@ package Chapter7.exc7
 
 
 /**
+ * In the preceding exercise, move all imports into the innermost scope possible.
+ *
  * Created by Kirill Feoktistov on 29.05.14
  */
 

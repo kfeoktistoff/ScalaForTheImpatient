@@ -1,6 +1,9 @@
 package Chapter6.exc8
 
 /**
+ * Write an enumeration describing the eight corners of the RGB color cube.
+ * As IDs, use the color values (for example, 0xff0000 for Red).
+ *
  * Created by Kirill Feoktistov on 28.05.14
  */
 

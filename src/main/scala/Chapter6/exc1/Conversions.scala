@@ -1,6 +1,8 @@
 package Chapter6.exc1
 
 /**
+ * Write an object Conversions with methods inchesToCentimeter, gallonsToLiter and milesToKilometer
+ *
  * Created by Kirill Feoktistov on 28.05.14
  */
 
