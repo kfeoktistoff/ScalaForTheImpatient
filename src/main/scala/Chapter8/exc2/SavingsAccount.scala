@@ -3,6 +3,11 @@ package Chapter8.exc2
 import Chapter8.exc1.BankAccount
 
 /**
+ * Extend the BankAccount class of the preceding exercise to a class
+ * SavingAccount that earns interest every month (when a method earnMonthlyInterest is called)
+ * and that has three free deposits or withdrawals every month. Reset the transaction count
+ * in the earnMonthlyInterest method.
+ *
  * Created by Kirill Feoktistov on 30.05.14
  */
 

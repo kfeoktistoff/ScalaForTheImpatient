@@ -3,6 +3,11 @@ package Chapter8.exc7
 import Chapter8.exc5.Point
 
 /**
+ * Provide a class Square that extends java.awt.Rectangle and
+ * has three constructors, one that constructs a square with a given
+ * corner point and width, one that constructs a square with corner (0, 0)
+ * and given width, and one that constructs a square with corner (0, 0) and width 0.
+ *
  * Created by Kirill Feoktistov on 31.05.14
  */
 

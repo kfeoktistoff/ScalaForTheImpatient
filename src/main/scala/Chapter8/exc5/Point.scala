@@ -1,6 +1,12 @@
 package Chapter8.exc5
 
 /**
+ * Design a class Point whose x- and y-coordinate values can be provided in a constructor.
+ * Provide a subclass LabeledPoint whose constructor takes a label value and x- and y-coordinates,
+ * such as
+ *
+ *  new LaveledPoint("Black Thursday", 1929, 230.07)
+ *
  * Created by Kirill Feoktistov on 31.05.14
  */
 
