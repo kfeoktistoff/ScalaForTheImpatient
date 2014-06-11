@@ -1,3 +1,5 @@
+In Scala REPL, type 3. followed by the TAB key. What methods can be applied?
+
 %
 &
 *

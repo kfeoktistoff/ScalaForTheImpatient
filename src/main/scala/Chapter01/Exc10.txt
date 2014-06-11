@@ -1,3 +1,6 @@
+What do the take, drop, takeRight, and dropRight string functions do? What
+advantage/disadvantage do they have over using substring?
+
 take(n) - returns substring containing first n symbols of original string
 drop(n) - returns substring containing all symbols of original string except first n symbols
 takeRight(n) - returns substring containing last n symbols of original string

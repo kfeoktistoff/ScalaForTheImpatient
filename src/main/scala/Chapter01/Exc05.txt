@@ -1,2 +1,4 @@
+What does 10 pow 2 mean? In which class is the pow method defined?
+
 Returns max value.
 scala.runtime.RishInt.scala
