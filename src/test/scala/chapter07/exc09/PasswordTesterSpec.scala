@@ -1,0 +1,21 @@
+package chapter07.exc09
+
+import org.scalatest.{FlatSpec, Matchers}
+
+/**
+ * Created by Kirill Feoktistov on 30.05.14
+ */
+
+class PasswordTesterSpec extends FlatSpec with Matchers {
+  "isStrongPassword" should "return false if password length < 6" in {
+    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3')) shouldBe false
+  }
+
+  "isStrongPassword" should "return false if password length = 6" in {
+    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3', '4', '5', '6')) shouldBe true
+  }
+
+  "isStrongPassword" should "return false if password length > 6" in {
+    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3', '4', '5', '6', '7')) shouldBe true
+  }
+}
