@@ -1,0 +1,5 @@
+def product(line:String):Long = {
+  var p:Long = 1
+  line.foreach(p*=_)
+  p
+}

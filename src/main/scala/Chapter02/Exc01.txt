@@ -1,0 +1,1 @@
+def signum(Double x) = if (x<0) -1 else if (x>0) 1 else 0
