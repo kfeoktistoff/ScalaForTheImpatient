@@ -1,3 +1,0 @@
-var p:Long = 1L
-for (i <- "Hello") p = p*i
-p

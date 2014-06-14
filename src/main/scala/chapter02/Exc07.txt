@@ -1,3 +1,0 @@
-var p = 1L
-"Hello".foreach(p*=_)
-p
