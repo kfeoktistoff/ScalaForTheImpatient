@@ -9,7 +9,7 @@ import org.scalatest.{FlatSpec, Matchers}
  */
 
 class IterableInputStreamSpec extends FlatSpec with Matchers {
-  "An IterableInputStream" should "" in {
+  "An IterableInputStream" should "return input byte-by-byte after read method calling" in {
     val testInput = "Hello".getBytes("UTF-8")
 
     val stream = new ByteArrayInputStream(testInput) with IterableInputStream {
@@ -24,5 +24,15 @@ class IterableInputStreamSpec extends FlatSpec with Matchers {
       readByte = stream.read()
       index += 1
     }
+  }
+
+  "An IterableInputStream" should "return -1 when end of input reached" in {
+    val testInput = "".getBytes("UTF-8")
+
+    val stream = new ByteArrayInputStream(testInput) with IterableInputStream {
+      override def iterator: Iterator[Byte] = buf.iterator
+    }
+
+    stream.read() shouldBe -1
   }
 }
