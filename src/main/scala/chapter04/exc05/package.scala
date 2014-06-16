@@ -7,6 +7,9 @@ import scala.collection.JavaConversions.mapAsScalaMap
 import scala.collection.mutable
 
 /**
+ * Repeat the preceding exercise with a java.util.TreeMap that you adapt
+ * to the Scala API.
+ *
  * Created by Kirill Feoktistov on 15.06.14
  */
 

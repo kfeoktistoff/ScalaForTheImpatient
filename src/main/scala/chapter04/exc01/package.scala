@@ -1,6 +1,9 @@
 package chapter04
 
 /**
+ * Set up a map of prices for a number of gizmos that you covet. Then
+ * produce a second map with the same keys and the prices at a 10 percent discount.
+ *
  * Created by Kirill Feoktistov on 15.06.14
  */
 

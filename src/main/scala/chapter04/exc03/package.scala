@@ -6,6 +6,8 @@ import java.util.Scanner
 import scala.collection.immutable.{HashMap, Map}
 
 /**
+ * Repeat the preceding exercise with an immutable map.
+ *
  * Created by Kirill Feoktistov on 15.06.14
  */
 

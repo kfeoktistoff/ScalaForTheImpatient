@@ -1,6 +1,9 @@
 package chapter04
 
 /**
+ * Write a function lteqgt(values: Array[Int], v: Int) that returns a triple
+ * containing count of values less than v, equal to v, and greater than v.
+ *
  * Created by Kirill Feoktistov on 15.06.14
  */
 

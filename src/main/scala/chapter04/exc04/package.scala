@@ -6,6 +6,9 @@ import java.util.Scanner
 import scala.collection.immutable.{Map, TreeMap}
 
 /**
+ * Repeat the preceding exercise with a java.util.TreeMap that you
+ * adapt to the Scala API.
+ *
  * Created by Kirill Feoktistov on 15.06.14
  */
 
