@@ -1,8 +1,8 @@
 package chapter07.exc09
 
-import java.lang.System.{console, _}
 import java.lang.System.err.{println => err}
 import java.lang.System.out.{println => info}
+import java.lang.System.{console, _}
 
 /**
  * Write a program that imports the java.lang.System class, reads the user name
@@ -22,6 +22,6 @@ class PasswordTester {
   }
 
   def isStrongPassword(password: Array[Char]) = {
-    password.length >= 6
+    "secret".toCharArray.deep equals password.deep
   }
 }

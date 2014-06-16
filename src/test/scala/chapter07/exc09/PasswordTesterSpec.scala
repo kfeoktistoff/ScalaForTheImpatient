@@ -7,15 +7,8 @@ import org.scalatest.{FlatSpec, Matchers}
  */
 
 class PasswordTesterSpec extends FlatSpec with Matchers {
-  "isStrongPassword" should "return false if password length < 6" in {
-    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3')) shouldBe false
-  }
-
-  "isStrongPassword" should "return false if password length = 6" in {
-    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3', '4', '5', '6')) shouldBe true
-  }
-
-  "isStrongPassword" should "return false if password length > 6" in {
-    new PasswordTester().isStrongPassword(Array[Char]('1', '2', '3', '4', '5', '6', '7')) shouldBe true
+  "isStrongPassword" should "return false if password is not 'secret" in {
+    new PasswordTester().isStrongPassword("qwerty".toCharArray) shouldBe false
+    new PasswordTester().isStrongPassword("secret".toCharArray) shouldBe true
   }
 }
