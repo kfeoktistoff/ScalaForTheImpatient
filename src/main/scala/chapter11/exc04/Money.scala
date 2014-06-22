@@ -15,7 +15,7 @@ class Money(val dollars: Int, val cents: Int) {
 
   override def toString: String = {
     val normalizedMoney = toMoney(toCents(this))
-    (if (math.signum(math.min(dollars, cents)) < 0) "-" else "") +
+    (if (math.signum(toCents(this)) < 0) "-" else "") +
       "$" + math.abs(normalizedMoney.dollars) + "." + math.abs(normalizedMoney.cents)
   }
 

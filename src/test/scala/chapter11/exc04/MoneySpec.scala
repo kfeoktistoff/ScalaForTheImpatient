@@ -47,6 +47,10 @@ class MoneySpec extends FlatSpec with Matchers {
     Money(0, -175).toString shouldBe "-$1.75"
   }
 
+  "A Money.toString" should "return $0.75 for Money(1, -25)" in {
+    Money(1, -25).toString shouldBe "$0.75"
+  }
+
   "A Money.==" should "return true for $1.25 and $1.25 " in {
     Money(1, 25) == Money(1, 25) shouldBe true
   }
