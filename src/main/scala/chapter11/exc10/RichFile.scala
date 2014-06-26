@@ -8,4 +8,6 @@ class RichFile() {
   def unapplySeq(filePath: String) = {
     Some(filePath.split('/').filter(!_.isEmpty))
   }
+
+  new BigInt().&~()
 }
