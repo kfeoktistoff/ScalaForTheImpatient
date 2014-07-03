@@ -1,4 +1,4 @@
-package chapter13.exc01
+package chapter13.exc02
 
 import org.scalatest.{FlatSpec, Matchers}
 
