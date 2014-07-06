@@ -1,0 +1,1 @@
+Approximately 11000 places where 'case' construction is used and less than 300 where falling through is useful feature. (JDK 1.7)
