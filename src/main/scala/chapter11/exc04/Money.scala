@@ -5,10 +5,6 @@ package chapter11.exc04
  * operators == and <. For example, Money(1, 75) + Money(0, 50) == Money(2, 25) should be true.
  * Should you also supply * and / operators? Why or why not?
  *
- * Implement a class Money with fields for dollars and cents. Supply +, - operators as well as comparison operator
- * '==' and '<'. For example, Money(1, 75) + Money(0, 50) = Money(2, 25) should be true. Should you also supply
- * and / operators? Why or why not?
- *
  * Operators * and / make sense if the second argument is number value.
  * Money * number can be used for calculation total price of several units.
  * Money / number can be used for calculation price per unit.
