@@ -1,6 +1,8 @@
 package chapter14
 
 /**
+ * Using pattern matching, write a function swap that swaps the first two elements of an array provided its length is at least two.
+ *
  * Created by Kirill Feoktistov on 06.07.14
  */
 
