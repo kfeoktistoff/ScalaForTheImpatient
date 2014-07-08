@@ -1,6 +1,8 @@
 package chapter12
 
 /**
+ * Implement the factorial function using to and reduceLeft, without a loop or recursion.
+ *
  * Created by Kirill Feoktistov on 29.06.14
  */
 

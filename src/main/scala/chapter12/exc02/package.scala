@@ -1,6 +1,8 @@
 package chapter12
 
 /**
+ * How do you get the largest element of an array with reduceLeft?
+ *
  * Created by Kirill Feoktistov on 29.06.14
  */
 

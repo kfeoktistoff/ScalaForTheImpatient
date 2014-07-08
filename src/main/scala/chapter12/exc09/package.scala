@@ -3,6 +3,8 @@ package chapter12
 import scala.collection.GenSeq
 
 /**
+ * Implement corresponds without currying. Then try the call from the preceding exercise. What problem do you encounter?
+ *
  * Created by Kirill Feoktistov on 29.06.14
  */
 
