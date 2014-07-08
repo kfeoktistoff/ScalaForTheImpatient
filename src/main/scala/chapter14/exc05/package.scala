@@ -3,9 +3,9 @@ package chapter14
 /**
  * One can use lists to model trees that store values only in the leaves. For example, the list ((3 8) 2 (5)) describes the tree
  *
- *      •
+ * +
  *     /|\
- *   •  2  •
+ * *  2  -
  *  / \    |
  * 3  8    5
  *
