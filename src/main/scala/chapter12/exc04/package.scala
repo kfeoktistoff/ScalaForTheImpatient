@@ -2,7 +2,7 @@ package chapter12
 
 /**
  * The previous implementation needed a special case when n < 1. Show how you can avoid this with foldLeft.
- * (Look at the Scaladoc for foldLeft. It’s like reduceLeft, except that the first value in the chain of
+ * (Look at the Scaladoc for foldLeft. It's like reduceLeft, except that the first value in the chain of
  * combined values is supplied in the call.)
  *
  * Created by Kirill Feoktistov on 29.06.14
