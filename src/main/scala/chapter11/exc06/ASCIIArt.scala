@@ -4,6 +4,24 @@ import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 /**
+ * Provide a class ASCIIArt whose objects contain figures such as
+ *
+ * /\_/\
+ * ( ' ' )
+ * (  -  )
+ * | | |
+ * (__|__)
+ *
+ * Supply operators for combining two ASCIIArt figures horizontally
+ *
+ * /\_/\    -----
+ * ( ' ' )  / Hello \
+ * (  -  ) <  Scala |
+ * | | |   \ Coder /
+ * (__|__)    -----
+ *
+ * or vertically. Choose operators with appropriate precedence.
+ *
  * Created by Kirill Feoktistov on 22.06.14
  */
 

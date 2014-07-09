@@ -1,6 +1,9 @@
 package chapter11.exc09
 
 /**
+ * Define an unapply operation for the RichFile class that extracts the file path, name, and extension.
+ * For example, the file /home/cay/readme.txt has path /home/cay, name readme, and extension txt.
+ *
  * Created by Kirill Feoktistov on 26.06.14
  */
 

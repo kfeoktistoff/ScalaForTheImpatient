@@ -1,6 +1,9 @@
 package chapter11.exc07
 
 /**
+ * Implement a class BitSequence that stores a sequence of 64 bits packed in a Long value.
+ * Supply apply and update operators to get and set an individual bit.
+ *
  * Created by Kirill Feoktistov on 22.06.14
  */
 
