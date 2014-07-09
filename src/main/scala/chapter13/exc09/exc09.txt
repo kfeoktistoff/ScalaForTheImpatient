@@ -1,0 +1,4 @@
+1. 'frequences = ...' is not thread safe operation
+
+2. No, correct import is:
+import scala.collection.JavaConversions.mapAsScalaDeprecatedConcurrentMap
