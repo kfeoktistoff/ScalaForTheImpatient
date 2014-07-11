@@ -1,0 +1,10 @@
+@param
+everywhere in ScalaDoc
+
+@field
+transient.scala
+volatile.scala
+
+@getter, @setter, @beanGetter, @beanSetter
+compileTimeOnly.scala
+deprecated.scala
