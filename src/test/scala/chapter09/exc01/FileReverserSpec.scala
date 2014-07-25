@@ -1,4 +1,4 @@
-package chapter09.exc01
+/*package chapter09.exc01
 
 import chapter09.OutputLinesAccumulator
 import org.mockito.Matchers.any
@@ -22,4 +22,4 @@ class FileReverserSpec extends FlatSpec with Matchers with MockitoSugar {
     output.output should contain inOrderOnly("3", "2", "1")
     verify(writer).flush()
   }
-}
+}*/
